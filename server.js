@@ -11,8 +11,7 @@ app.use(express.json())
 if (process.env.NODE_ENV === 'local') {
   app.use(
     cors({
-      origin:
-        'https://6655eef8ad18903b62e875a9--beautiful-conkies-ec2dfe.netlify.app/',
+      origin: '*',
       credentials: true,
     })
   )
