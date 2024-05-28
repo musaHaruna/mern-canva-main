@@ -5,14 +5,14 @@ const dotenv = require('dotenv')
 const cors = require('cors')
 const path = require('path')
 
-
 dotenv.config()
 app.use(express.json())
 
 if (process.env.NODE_ENV === 'local') {
   app.use(
     cors({
-      origin: 'http://localhost:5173',
+      origin:
+        'https://6655eef8ad18903b62e875a9--beautiful-conkies-ec2dfe.netlify.app/',
       credentials: true,
     })
   )
