@@ -11,7 +11,7 @@ app.use(express.json())
 if (process.env.NODE_ENV === 'local') {
   app.use(
     cors({
-      origin: 'multimediadraw.netlify.app',
+      origin: 'https://multimediadraw.netlify.app',
       credentials: true,
     })
   )
